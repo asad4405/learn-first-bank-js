@@ -2,10 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Shopping Cart </title>
+    <title>Shopping Cart</title>
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -23,14 +28,14 @@
 
           <div class="col-md-3 quantity-box">
             <div class="qty-wrapper">
-              <button class="qty-btn">-</button>
-              <input type="text" value="1" class="qty-input" />
-              <button class="qty-btn">+</button>
+              <button class="qty-btn" id="iphoneMinusQty">-</button>
+              <input type="text" value="1" class="qty-input" id="iphoneQty" />
+              <button class="qty-btn" id="iphonePlusQty">+</button>
             </div>
           </div>
 
           <div class="col-md-2 text-center">
-            <div class="price">$1219</div>
+            <div class="price">$<span id="iphonePrice">1219</span></div>
           </div>
 
           <div class="col-md-1 text-center">
@@ -50,14 +55,19 @@
 
           <div class="col-md-3 quantity-box">
             <div class="qty-wrapper">
-              <button class="qty-btn">-</button>
-              <input type="text" value="1" class="qty-input" />
-              <button class="qty-btn">+</button>
+              <button class="qty-btn" id="iphonCoverMinusQty">-</button>
+              <input
+                type="text"
+                value="1"
+                class="qty-input"
+                id="iphoneCoverQty"
+              />
+              <button class="qty-btn" id="iphonCoverPlusQty">+</button>
             </div>
           </div>
 
           <div class="col-md-2 text-center">
-            <div class="price">$59</div>
+            <div class="price">$<span id="iphoneCoverPrice">59</span></div>
           </div>
 
           <div class="col-md-1 text-center">
@@ -69,15 +79,15 @@
         <div class="summary-box mt-4">
           <div class="summary-row">
             <span>Subtotal:</span>
-            <span>$1,278</span>
+            <span>$<span id="subtotalAmount">1278</span></span>
           </div>
           <div class="summary-row">
             <span>Tax:</span>
-            <span>$0</span>
+            <span>$<span id="tax">20</span>
           </div>
           <div class="summary-row fw-bold">
             <span>Total:</span>
-            <span>$1,278</span>
+            <span>$<span id="totalAmount">1298</span></span>
           </div>
         </div>
 
@@ -86,7 +96,11 @@
         </div>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/script.js"></script>
   </body>
 </html>
